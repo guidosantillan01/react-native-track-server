@@ -1,5 +1,9 @@
 ## React Native Tracker App - SERVER
 
+## Requirements
+
+`npm install bcryptjs express mongoose nodemon jsonwebtoken`
+
 ### Problems
 
 Installing bcrypt
