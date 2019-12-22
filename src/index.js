@@ -1,10 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
 const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 
+// To handle incoming JSON information
+app.use(bodyParser.json()); // It should be BEFORE authRoutes
 app.use(authRoutes);
 
 const mongoUri =
